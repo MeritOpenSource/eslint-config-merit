@@ -11,7 +11,7 @@ This setup lints your typescript code based on practices. Feel free to override 
 1. In your project folder, run:
 
 ```
-yarn install --dev eslint-config-merit
+yarn add --dev eslint-config-merit
 ```
 
 2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file with the following content:
