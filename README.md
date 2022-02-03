@@ -14,7 +14,7 @@ This setup lints your typescript code based on practices. Feel free to override 
 yarn add --dev eslint-config-merit
 ```
 
-2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file to extend below rules:
+2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file to extend rules:
 
 - Extend frontend rules
     ```js
@@ -40,3 +40,28 @@ yarn add --dev eslint-config-merit
       ]
     }
     ```
+
+3. You can extend other rules too
+
+- Extend other rules 
+    ```js
+    {
+      'extends': [
+        'merit/frontend',
+        'airbnb-typescript'
+      ]
+    }
+    ```
+    Note:- order matters when extending rules , if same rule is present in two eslint config later override the former rule 
+
+4. You can also override a rule that is defined in any extended config file
+- Override rules
+    ```js
+    {
+        'extends': [
+          'merit/frontend'
+        ],
+        'rules': {
+          "no-console": "off"
+        }
+    }
