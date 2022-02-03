@@ -3,6 +3,7 @@ module.exports = {
     "arrow-body-style": ["error", "as-needed"],
     "no-async-promise-executor": "error",
     "no-await-in-loop": "error",
+    "no-console": "error",
     "no-duplicate-imports": "error",
     "no-misleading-character-class": "error",
     "no-prototype-builtins": "error",
@@ -125,6 +126,10 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-type-alias": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/promise-function-async": "off",
     "@typescript-eslint/strict-boolean-expressions": [

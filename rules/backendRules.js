@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
-    "./commonRules",
     "plugin:@typescript-eslint/all",
     "plugin:functional/recommended",
     "prettier",
+    "./commonRules",
   ],
   plugins: [
     "@typescript-eslint",
@@ -14,7 +14,6 @@ module.exports = {
     "sort-destructure-keys",
   ],
   rules: {
-    "no-console": "error",
     "no-unused-vars": [
       "error",
       { argsIgnorePattern: "impossible", varsIgnorePattern: "React" },

@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
-    "./commonRules",
     "plugin:@typescript-eslint/all",
     "plugin:functional/recommended",
     "prettier",
+    "./commonRules",
   ],
   plugins: [
     "@typescript-eslint",
