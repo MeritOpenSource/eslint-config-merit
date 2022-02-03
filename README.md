@@ -14,14 +14,29 @@ This setup lints your typescript code based on practices. Feel free to override 
 yarn add --dev eslint-config-merit
 ```
 
-2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file with the following content:
+2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file to extend below rules:
 
-```js
-{
-  'extends': [
-    'merit/backend',
-    'merit/frontend'
-  ]
-}
-```
-
+- Extend frontend rules
+    ```js
+    {
+      'extends': [
+        'merit/frontend'
+      ]
+    }
+    ```
+- Extend backend rules
+    ```js
+    {
+      'extends': [
+        'merit/backend'
+      ]
+    }
+    ```
+- Extend common rules
+    ```js
+    {
+      'extends': [
+        'merit/common'
+      ]
+    }
+    ```
