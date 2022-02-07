@@ -32,14 +32,6 @@ yarn add --dev eslint-config-merit
       ]
     }
     ```
-- Extend common rules
-    ```js
-    {
-      'extends': [
-        'merit/common'
-      ]
-    }
-    ```
 
 3. You can extend other rules too
 
