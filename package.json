@@ -2,11 +2,7 @@
   "name": "eslint-config-merit",
   "version": "1.0.0",
   "description": "shareable eslint config for merit app",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Rohit k",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "eslint": "^7.30.0",
