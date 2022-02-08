@@ -17,7 +17,6 @@ module.exports = {
   ],
   rules: {
     "no-unused-vars": "off",
-    "no-console": "error",
 
     // React
     "react/button-has-type": "error",
