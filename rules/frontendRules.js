@@ -46,8 +46,5 @@ module.exports = {
     // React-hooks
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
-
-    // Sorting
-    "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
   },
 };

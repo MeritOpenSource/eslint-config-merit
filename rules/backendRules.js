@@ -13,8 +13,5 @@ module.exports = {
     "sort-keys-fix",
     "sort-destructure-keys",
   ],
-  rules: {
-    // Sorting
-    "sort-keys-fix/sort-keys-fix": "error",
-  },
+  rules: {},
 };
