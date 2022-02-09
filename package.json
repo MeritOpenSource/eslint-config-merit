@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-merit",
   "version": "1.0.0",
-  "description": "shareable eslint config for merit app",
+  "description": "eslint config for webapps at Merit",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 7.30.0 < 8.0.0",
