@@ -16,8 +16,6 @@ module.exports = {
     "sort-destructure-keys",
   ],
   rules: {
-    "no-unused-vars": "off",
-
     // React
     "react/button-has-type": "error",
     "react/destructuring-assignment": "error",

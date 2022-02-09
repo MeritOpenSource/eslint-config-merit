@@ -14,11 +14,6 @@ module.exports = {
     "sort-destructure-keys",
   ],
   rules: {
-    "no-unused-vars": [
-      "error",
-      { argsIgnorePattern: "impossible", varsIgnorePattern: "React" },
-    ],
-
     // Sorting
     "sort-keys-fix/sort-keys-fix": "error",
   },
