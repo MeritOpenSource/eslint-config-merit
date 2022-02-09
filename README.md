@@ -1,20 +1,16 @@
 # ESLint config
 
-These are settings for ESLint used by merit form214 app.
-
-## What it does
-
-This setup lints your typescript code based on practices. Feel free to override the rules that make sense for you.
+Shareable eslint config for use in Merit apps.
 
 ## Installing
 
-1. In your project folder, run:
+1. In your project folder, install this config and it's required pieces. Pick a commit hash from head of master. We'll get this on a proper package registry soon:
 
 ```
-yarn add --dev eslint-config-merit
+yarn add --dev github:MeritOpenSource/eslint-config-merit#{commit-hash} eslint@^7.32.0 typescript
 ```
 
-2. You will see several dependencies were installed. Now, create (or update) a `.eslintrc` file to extend rules:
+2. Now, create `.eslintrc.js` file to extend rules:
 
 - Extend frontend rules
     ```js
@@ -33,27 +29,25 @@ yarn add --dev eslint-config-merit
     }
     ```
 
-3. You can extend other rules too
+3. Due to ESLint shareable configs being painful, we strongly recommend the Rush Stack eslint-patch.
 
-- Extend other rules 
-    ```js
-    {
-      'extends': [
-        'merit/frontend',
-        'airbnb-typescript'
-      ]
-    }
-    ```
-    Note:- order matters when extending rules , if same rule is present in two eslint config later override the former rule 
+- Install: `yarn add --dev @rushstack/eslint-patch`
 
-4. You can also override a rule that is defined in any extended config file
-- Override rules
-    ```js
-    {
-        'extends': [
-          'merit/frontend'
-        ],
-        'rules': {
-          "no-console": "off"
-        }
+- Use the eslint-patch, make your `.eslintrc.js` file look something like:
+```
+// This is a workaround for https://github.com/eslint/eslint/issues/3458
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+module.exports = {
+  extends: [ "merit/frontend" ],  // <---- put your profile string here
+  parserOptions: {
+    project: "./tsconfig.json",
+    tsconfigRootDir: __dirname
+  },
+  settings: {
+    react: {
+      "version": "16.9" // <---- update this, or drop section entirely for backend ruleset
     }
+  }
+};
+```
