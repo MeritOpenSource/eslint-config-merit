@@ -114,7 +114,9 @@ module.exports = {
       { blankLine: "never", prev: "import", next: "import" },
     ],
     "require-await": "error",
+
     // Sorting
+    "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
     "sort-imports-es6-autofix/sort-imports-es6": "error",
     "sort-destructure-keys/sort-destructure-keys": "error",
 
