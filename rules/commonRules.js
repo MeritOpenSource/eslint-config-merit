@@ -46,7 +46,7 @@ module.exports = {
     "no-script-url": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
-    "no-shadow": "error",
+    "no-shadow": "off", // Handled by @typescript-eslint/no-shadow
     "no-throw-literal": "error",
     "no-unmodified-loop-condition": "error",
     "no-unused-expressions": "error",
@@ -128,6 +128,7 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/no-unsafe-argument": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
