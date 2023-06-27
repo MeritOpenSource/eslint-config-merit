@@ -1,6 +1,7 @@
 {
   "name": "eslint-config-merit",
   "version": "1.0.0",
+  "repository": "git@github.com:MeritOpenSource/eslint-config-merit.git",
   "description": "eslint config for webapps at Merit",
   "license": "MIT",
   "peerDependencies": {
